@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maMykola/affiliate-api.git",
-                "reference": "1493618ca2487edf89f36d6927d9548aca80f66c"
+                "reference": "aa76a3578cde4c622013b285940c725693144d66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maMykola/affiliate-api/zipball/1493618ca2487edf89f36d6927d9548aca80f66c",
-                "reference": "1493618ca2487edf89f36d6927d9548aca80f66c",
+                "url": "https://api.github.com/repos/maMykola/affiliate-api/zipball/aa76a3578cde4c622013b285940c725693144d66",
+                "reference": "aa76a3578cde4c622013b285940c725693144d66",
                 "shasum": ""
             },
             "require": {
@@ -32,7 +32,7 @@
                 }
             ],
             "description": "API for Affiliate Tools",
-            "time": "2017-07-17 08:48:18"
+            "time": "2017-07-17 09:30:54"
         }
     ],
     "packages-dev": [],

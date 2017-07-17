@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require_once __DIR__ . '/core.php';
 
 $campaign = filter_input(INPUT_GET, 'cmp');
@@ -14,5 +16,7 @@ if (!isCampaignAllowed($campaign)) {
 }
 
 $url = "http://{$domain}{$replace_url}?id=$link_id";
-echo $url;exit;
+
+$_SESSION['campaign'] = $campaign;
+
 header("Location: $url");

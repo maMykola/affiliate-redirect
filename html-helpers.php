@@ -20,3 +20,27 @@ function renderHtmlNotFound($url = '')
 </html>
 HTML_TEXT;
 }
+
+/**
+ * Return html for redirect page
+ *
+ * @param  string  $url
+ * @return string
+ * @author Mykola Martynov
+ **/
+function renderHtmlRedirect($url)
+{
+    return <<< HTML_TEXT
+<!doctype html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta http-equiv="refresh" content="0;url=$url" />
+    <script>document.location = "$url";</script>
+</head>
+<body>
+    <p>Please follow this <a href="$url">link</a>!</p>
+</body>
+</html>
+HTML_TEXT;
+}
