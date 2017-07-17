@@ -1,5 +1,15 @@
 {
+    "name": "uspc/affiliate-redirect",
+    "description": "Tool for Redirecting Affiliate Links",
+    "authors": [
+        {
+            "name": "Mykola Martynov",
+            "email": "mykola.martynov@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
     "require": {
+        "php": ">=5.5.0",
         "uspc/affiliate-api": "dev-master"
     }
 }
