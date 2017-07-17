@@ -1,0 +1,48 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "da636cf1d4ccf821de5cf2a4e323b8c1",
+    "packages": [
+        {
+            "name": "uspc/affiliate-api",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maMykola/affiliate-api.git",
+                "reference": "1493618ca2487edf89f36d6927d9548aca80f66c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maMykola/affiliate-api/zipball/1493618ca2487edf89f36d6927d9548aca80f66c",
+                "reference": "1493618ca2487edf89f36d6927d9548aca80f66c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Mykola Martynov",
+                    "email": "mykola.martynov@hotmail.com"
+                }
+            ],
+            "description": "API for Affiliate Tools",
+            "time": "2017-07-17 08:48:18"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "uspc/affiliate-api": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

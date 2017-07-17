@@ -1,0 +1,5 @@
+{
+    "require": {
+        "uspc/affiliate-api": "dev-master"
+    }
+}
