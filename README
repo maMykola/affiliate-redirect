@@ -1,0 +1,19 @@
+1. Put this project into root _affiliate_ folder
+
+2. Add following lines into website root file .htaccess
+
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_URI}      ^/track$
+    RewriteRule .*  /affiliate/affiliate-replace.php  [L,QSA]
+
+    RewriteCond %{REQUEST_URI}      ^/go$
+    RewriteRule .*  /affiliate/link-redirect.php    [L,QSA]
+
+    RewriteCond %{REQUEST_URI}      ^/details$
+    RewriteRule .*  /affiliate/link-info.php        [L,QSA]
+
+3. Set parameters (copy first from parameters.dist.php)
+
+    cp parameters.dist.php parameters.php
+    vim parameters.php
