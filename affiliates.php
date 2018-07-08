@@ -25,13 +25,14 @@ function isCampaignAllowed($campaign_id)
  **/
 function isRefererAllowed($campaign_id, $referer)
 {
-    global $campaigns;
+    global $campaigns, $refferals_allowed;
 
     if (empty($campaigns[$campaign_id])) {
         return false;
     }
 
-    $host = strtolower(parse_url($referer, PHP_URL_HOST));
+    # temporary check only all allowed referrals without campaign restriction
+    $host = preg_replace('#(^www\.|\.local$)#', '', strtolower(parse_url($referer, PHP_URL_HOST)));
 
-    return $host == $campaigns[$campaign_id];
+    return in_array($host, $refferals_allowed);
 }
